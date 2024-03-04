@@ -1,4 +1,4 @@
-package API::Run::Plugin;
+package App::Run::Plugin;
 use Mojo::Base -base, -signatures;
 
 sub load ($self, $app) {

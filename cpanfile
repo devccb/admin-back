@@ -1,3 +1,10 @@
 requires 'Mojolicious'                     => '9.35';
 requires 'Mojolicious::Plugin::Route'      => '0.09';
 requires 'Mojolicious::Plugin::Model'      => '0.13';
+requires 'SQL::Abstract'                   => '2.000001';
+requires 'DBD::mysql'                      => '== 4.050';
+requires 'Mojo::mysql'                     => '1.26';
+requires 'SQL::Load'                       => '0.06';
+requires 'Data::Page'                      => '2.03';
+requires 'DateTime'                        => '1.59';
+requires 'Data::Dump'                      => '1.25';
