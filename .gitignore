@@ -1,3 +1,4 @@
 app.yml
 script/encode-config
 config.b64
+log/mojo.log
