@@ -1,0 +1,9 @@
+---
+secrets:
+  - 38fe7db44e8d9a7b1fdbf9fc7e645e72167abd02
+
+database:
+  host: localhost
+  user: user
+  pass: pass
+  bank: admin
