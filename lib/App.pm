@@ -1,20 +1,15 @@
 package App;
 use Mojo::Base 'Mojolicious', -signatures;
+use API::Run::Plugin;
 
 # This method will run once at server start
 sub startup ($self) {
 
-  # Load configuration from config file
-  my $config = $self->plugin('NotYAMLConfig');
+  # it is module to load all plugins
+  API::Run::Plugin->load($self);
 
-  # Configure the application
-  $self->secrets($config->{secrets});
-
-  # Router
-  my $r = $self->routes;
-
-  # Normal route to controller
-  $r->get('/')->to('Example#welcome');
+  # set file log
+  $self->log->path($self->home . '/log/mojo.log') if -d $self->home . '/log';  
 }
 
 1;
