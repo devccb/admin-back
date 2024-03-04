@@ -6,4 +6,4 @@ database:
   host: localhost
   user: user
   pass: pass
-  bank: admin
+  base: admin
