@@ -8,3 +8,4 @@ requires 'SQL::Load'                       => '0.06';
 requires 'Data::Page'                      => '2.03';
 requires 'DateTime'                        => '1.59';
 requires 'Data::Dump'                      => '1.25';
+requires 'Type::Tiny'                      => '2.004000';
